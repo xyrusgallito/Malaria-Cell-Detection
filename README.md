@@ -10,7 +10,11 @@ Summary of the project.
 
 Images below show samples of parasitized or infected malaria cells:
 
-![parasitized_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/cb2449d2-1b2f-4818-831c-d4291859906e)
+![parasitized_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/15c0fb26-de1d-4025-ac9f-a9722ec8a8d9)
+
+
+
+![parasitized_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/cb2449d2-1b2f-4818-831c-d4291859906e.png)
 
 Images below show samples of normal or uninfected malaria cells:
 
