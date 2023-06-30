@@ -92,8 +92,7 @@ Below is the summary architecture of the tuned CNN model:
 
 <p align="justify">Figure 5 presents the performance of tuned model. It is evident that the implementation of batch normalization and the addition of dropout layers in the convolutional layers effectively mitigated the overfitting issue encountered in basic CNN. These techniques have successfully improved the model's generalization capability and reduced the discrepancy between training and validation performance.</p><br>
 
-![model1_performance](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/1fff7bf7-a91e-4dab-a12b-abf30382b474) <br>
-
+ ![cnn_model2](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/39f438d6-c93d-4cf2-9c08-d86470384409) <br>
 
 Basic CNN vs tuned CNN performance comparison:
 
