@@ -100,10 +100,11 @@ Below is the summary architecture of the tuned CNN model:
 
 Basic CNN vs tuned CNN performance comparison:
 
-<img width="701" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/c5c2d912-7ff1-42db-920a-6e18d5edd9a2">
+<img width="701" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/c5c2d912-7ff1-42db-920a-6e18d5edd9a2"><br>
 
+<br>
 
-Sources:
+Sources:<br>
 Murray, C. K. & Bennett, J. W., 2009. Rapid Diagnosis of Malaria. Murray, Clinton K, and Jason W Bennett. “Rapid Diagnosis of Malaria.” Interdisciplinary perspectives on infectious diseases.
 Mandal, M., 2021. Analytics Vidhya. [Online] 
 Available at: https://www.analyticsvidhya.com/blog/2021/05/convolutional-neural-networks-cnn/
