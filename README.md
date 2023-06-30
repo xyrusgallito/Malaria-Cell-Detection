@@ -1,7 +1,5 @@
 # Malaria-Cell-Detection
 
-<p align="justify">This is a sample paragraph of text that will be justified.</p>
-
 The primary objective of this project is to develop an accurate and efficient classification system capable of distinguishing between normal and abnormal malaria cells. To achieve this, the researcher aimed to create an algorithm that leverages the power of both machine learning (ML) and deep learning (DL) models. By analyzing cell images, the goal is to automatically detect and identify malaria-infected cells, enabling early and reliable diagnosis.
 
 Malaria, a febrile illness caused by Plasmodium parasites transmitted through mosquito bites, poses a significant global health concern as reported by the World Health Organization (WHO). In their worldwide malaria report for 2021, the WHO documented over 240 million cases of malaria in 2020. The impact of this rise in malaria cases is particularly severe in developing nations, where healthcare systems often face overwhelming challenges (Murray & Bennett, 2009).
