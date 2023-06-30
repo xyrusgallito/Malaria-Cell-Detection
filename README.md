@@ -1,5 +1,7 @@
 # Malaria-Cell-Detection
 
+
+
 Summary of the project.
 
 <p align="justify">The primary objective of this project is to develop an accurate and efficient classification system capable of distinguishing between normal and abnormal malaria cells. To achieve this, the researcher aimed to create an algorithm that leverages the power of both machine learning (ML) and deep learning (DL) models. By analyzing cell images, the goal is to automatically detect and identify malaria-infected cells, enabling early and reliable diagnosis.</p>
@@ -12,26 +14,21 @@ Images below show samples of parasitized or infected malaria cells:
 
 ![parasitized_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/15c0fb26-de1d-4025-ac9f-a9722ec8a8d9)
 
-
-
-![parasitized_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/cb2449d2-1b2f-4818-831c-d4291859906e.png)
-
 Images below show samples of normal or uninfected malaria cells:
 
-![uninfected_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/2b62f276-8f51-453c-a69e-29fede1afa7e)
+![uninfected_cells](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/c3e8e14d-a2d5-4073-ab3d-005396173ee6)
 
 Converting RGB cell images to grayscale helps reduce computational complexities:
 
-![grey_parasitized copy](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/8d6ddf00-fd9b-441c-ab80-dcf77475f94c)
+![grey_parasitized copy](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/86de7ce9-523d-430f-845a-70bf251147b2) <br>
 
-![grey_uninfected](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/b34ac748-d89e-4472-b3dc-9f742acc783c)
-
+![grey_uninfected](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/d14c7c17-8e2d-49b5-a041-daa30c8cdde9) <br>
 
 <p align="justify">The dataset consists of a total of 27,558 malaria cell images, comprising 13,779 parasitized cell images and 13,779 uninfected cell images. This balanced dataset provides an equal representation of both classes. However, the raw malaria cell images have varying sizes. Due to the limitations of the laptop used for this project, all images will be resized to 64 by 64 dimensions using a batch size of 48.</p>
 
 The Malaria dataset can be found and downloaded from this link: https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria. Below figure shows the distribution of each label or set: 
 
-![bar plots](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/5e02078e-d28a-4447-b1c3-abaa0f728d5c)
+![bar_plots](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/f3897541-dc7e-4f7c-b966-bd6e5fa92eb4) <br>
 
 **ML/DL Algorithms**
 
@@ -41,24 +38,19 @@ The Malaria dataset can be found and downloaded from this link: https://www.kagg
 
 Basic CNN model summary:
 
-<img width="512" alt="model1_summary" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/e5e3c9b5-0c21-4e6c-be6d-b05517df0ebf"> <br>
-
-Basic CNN model performance:
-
-![cnn_model1](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/20c99336-419b-4879-938a-5f9857a0ecb4)
+<img width="512" alt="model1_summary" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/7ad89549-cd38-4b5f-8304-e0c4d5b357d2"> <br>
 
 Confusion matric of the basic CNN model:
 
-![conf_matrix_model1](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/be33f685-22fa-41d0-a101-3f578fa712aa)
+![conf_matrix_model1](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/51deddee-1f9a-46e5-814a-df1d8c616bd5) <br>
 
-ROC_AUC:
+ROC_AUC (Sensitivity and Specificity) :
 
-![basic_cnn_roc](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/a9cd2a9e-b984-4a10-b8a6-65bcde1db8cb)
+![ROC_auc_model1](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/61038f8f-2e19-418b-b9be-f7c38468ec8d) <br>
 
-Precision and Recall:
+ROC_AUC (Precision and Recall):
 
-![basic_cnn_precision_recall](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/2109ee4b-b72a-4bd7-a5e9-b3a1cc13643a)
-
+![basic_cnn_precision_recall](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/83878507-6f8b-462e-ae82-cc77968acb6e) <br>
 
 2. Support Vector Machine (SVM)
    
@@ -66,27 +58,27 @@ Precision and Recall:
 
 <p align="justify">To reduce the dimensionality of the input before feeding into the model,  Principal Component Analysis (PCA). As shown in Figure 3, 95% of the variance was explained by 7th principal component. This will be used later for grid search.</p>
 
-![PCA](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/9029a96b-7184-4e67-94cd-1d59f7a566de)
+<img width="792" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/ec36ccec-6476-4711-8039-c31a5013ae71"> <br>
 
 <p align="justify">After perform grid search, the best combination of cost and gamma are 100 and 0.01, respectively. These hyperparameters will be used to evaluate the model using the test set. Accuracy of 95% confidence interval is between 83.1% to 84.8%. </p>
 
 Confusion matrix of SVM model:
 
-![conf_matrix_svm](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/65fec157-6b8f-4a00-81c1-a92c55309bec)
+<img width="711" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/48d03fb5-d521-4aa8-bf89-0caafe5fa58f"> <br>
 
 ROC_AUC curve:
 
-![SVM_ROC](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/695b2706-d208-4a5a-9acb-aff32f232dc3)
+<img width="523" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/a0345ab1-771b-491e-a73f-faff23f115b0"> <br>
 
 Precision and Recall curve:
 
-![SVM_precision_recall](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/d9a34405-eaa9-4651-8a50-bbed3bb4bcdb)
+<img width="451" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/ac8c1f41-ab33-4e19-8d8b-1c013b2a6261"> <br>
 
 **Model Evaluation**
 
 <p align="justify">Because relying solely on accuracy may not provide a comprehensive evaluation of the model's performance, additional metrics such as Precision (positive predictive value), Recall (true positive rate), and F1-score (a metric that combines Precision and Recall) were calculated. The following table presents the model metrics for the basic CNN and SVM:</p>
 
-<img width="925" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/7738cfe8-9408-495f-8d8b-894f250d6323">
+<img width="696" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/f5e7a397-6cf9-4b86-b7be-2f7855e7be5e"> <br>
 
 <p align="justify">These metrics provide a more detailed assessment of the model's ability to correctly identify positive and negative instances, taking into account both false positives and false negatives.</p>
 
@@ -96,15 +88,16 @@ Precision and Recall curve:
 
 Below is the summary architecture of the tuned CNN model:
 
-<img width="603" alt="model2_summary" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/48f36c33-a3fa-4928-918b-2f5a8563fd0f"><br>
+<img width="603" alt="model2_summary" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/d80b9810-9335-467a-94b2-a62f8c133520"> <br>
 
 <p align="justify">Figure 5 presents the performance of tuned model. It is evident that the implementation of batch normalization and the addition of dropout layers in the convolutional layers effectively mitigated the overfitting issue encountered in basic CNN. These techniques have successfully improved the model's generalization capability and reduced the discrepancy between training and validation performance.</p><br>
 
-![cnn_model2](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/53f9ad42-de4c-4b1e-a382-183260783ca5)<br>
+![model1_performance](https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/1fff7bf7-a91e-4dab-a12b-abf30382b474) <br>
+
 
 Basic CNN vs tuned CNN performance comparison:
 
-<img width="701" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/c5c2d912-7ff1-42db-920a-6e18d5edd9a2"><br>
+<img width="696" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/b1b42b3a-febe-4a0b-a623-411c0412932f"> <br>
 
 <br>
 
