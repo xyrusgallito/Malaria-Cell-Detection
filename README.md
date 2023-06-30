@@ -103,6 +103,18 @@ Basic CNN vs tuned CNN performance comparison:
 <img width="701" alt="image" src="https://github.com/xyrusgallito/Malaria-Cell-Detection/assets/32282729/c5c2d912-7ff1-42db-920a-6e18d5edd9a2">
 
 
+Sources:
+Murray, C. K. & Bennett, J. W., 2009. Rapid Diagnosis of Malaria. Murray, Clinton K, and Jason W Bennett. “Rapid Diagnosis of Malaria.” Interdisciplinary perspectives on infectious diseases.
+Mandal, M., 2021. Analytics Vidhya. [Online] 
+Available at: https://www.analyticsvidhya.com/blog/2021/05/convolutional-neural-networks-cnn/
+Chan, C., 2022. DisplayR Blog. [Online] 
+Available at: https://www.displayr.com/what-is-a-roc-curve-how-to-interpret-it/
+Telrandhe, S. R., Pimpalkar, A. & Kendhe, A., 2016. Detection of brain tumor from MRI images by using segmentation & SVM. 2016 World Conference on Futuristic Trends in Research and Innovation for Social Welfare (Startup Conclave).
+Brownlee, J., 2020. Machine Learning Mastery. [Online] 
+Available at: https://machinelearningmastery.com/confusion-matrix-machine-learning/
+[Accessed 20 May 2022].
+
+
 
 
 
